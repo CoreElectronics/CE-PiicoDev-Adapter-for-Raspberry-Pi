@@ -445,12 +445,12 @@ $EndComp
 $Comp
 L CoreElectronics_Artwork:LOGO_CoreElectronics_made-with-love G2
 U 1 1 602FAEEA
-P 9950 6300
-F 0 "G2" H 9950 6094 60  0001 C CNN
-F 1 "LOGO_CoreElectronics_made-with-love" H 9950 6506 60  0001 C CNN
-F 2 "CoreElectronics_Artwork:piicodev_logo_10.2x2.5mm" H 9950 6300 50  0001 C CNN
-F 3 "" H 9950 6300 50  0001 C CNN
-	1    9950 6300
+P 10350 6300
+F 0 "G2" H 10350 6094 60  0001 C CNN
+F 1 "LOGO_CoreElectronics_made-with-love" H 10350 6506 60  0001 C CNN
+F 2 "CoreElectronics_Artwork:piicodev_logo_10.2x2.5mm" H 10350 6300 50  0001 C CNN
+F 3 "" H 10350 6300 50  0001 C CNN
+	1    10350 6300
 	1    0    0    -1  
 $EndComp
 $Comp
