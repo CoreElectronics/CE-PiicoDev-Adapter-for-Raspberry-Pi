@@ -5,8 +5,8 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
 Title "PiicoDev Adapter for Raspberry Pi"
-Date "2021-03-31"
-Rev "v10"
+Date "2021-06-28"
+Rev "v11"
 Comp "Core Electronics"
 Comment1 "Based off the design by SparkFun: https://github.com/sparkfun/Qwiic_Hat_for_Raspberry_Pi"
 Comment2 "http://creativecommons.org/licenses/by-sa/4.0"
@@ -171,7 +171,7 @@ U 1 1 602B4396
 P 2550 3900
 F 0 "J1" H 2550 5381 50  0000 C CNN
 F 1 "Raspberry_Pi_2_3" H 2550 5290 50  0000 C CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_2x20_P2.54mm_Vertical_SMD" H 2550 3900 50  0001 C CNN
+F 2 "CoreElectronics_Components:PinSocket_2x20_P2.54mm_Vertical_SMD_With_Post" H 2550 3900 50  0001 C CNN
 F 3 "https://www.raspberrypi.org/documentation/hardware/raspberrypi/schematics/rpi_SCH_3bplus_1p0_reduced.pdf" H 2550 3900 50  0001 C CNN
 	1    2550 3900
 	1    0    0    -1  
@@ -437,7 +437,7 @@ U 1 1 602FA4DE
 P 8000 6300
 F 0 "G1" H 8000 6095 60  0001 C CNN
 F 1 "LOGO_PiicoDev" H 8000 6505 60  0001 C CNN
-F 2 "CoreElectronics_Artwork:piicodev_logo_v2_14.2x3.2mm" H 8000 6300 50  0001 C CNN
+F 2 "CoreElectronics_Artwork:piicodev_logo_10.2x2.5mm" H 8000 6300 50  0001 C CNN
 F 3 "" H 8000 6300 50  0001 C CNN
 	1    8000 6300
 	1    0    0    -1  
@@ -495,16 +495,6 @@ Wire Wire Line
 Wire Wire Line
 	2650 5250 2650 5200
 Connection ~ 2550 5250
-Wire Wire Line
-	2650 5250 2750 5250
-Wire Wire Line
-	2750 5250 2750 5200
-Connection ~ 2650 5250
-Wire Wire Line
-	2750 5250 2850 5250
-Wire Wire Line
-	2850 5250 2850 5200
-Connection ~ 2750 5250
 NoConn ~ 3350 3000
 NoConn ~ 3350 3100
 NoConn ~ 3350 3600
