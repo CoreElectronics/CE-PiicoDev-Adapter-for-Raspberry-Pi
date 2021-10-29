@@ -4,6 +4,8 @@
 *.zip
 *.xlsx
 *.xls
+makePanel
+
 ## BOM files
 *bom*
 
