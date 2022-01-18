@@ -5,8 +5,8 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
 Title "PiicoDev Adapter for Raspberry Pi"
-Date "2021-10-29"
-Rev "v12"
+Date "2022-01-18"
+Rev "v13"
 Comp "Core Electronics"
 Comment1 "Based off the design by SparkFun: https://github.com/sparkfun/Qwiic_Hat_for_Raspberry_Pi"
 Comment2 "http://creativecommons.org/licenses/by-sa/4.0"
@@ -143,10 +143,6 @@ F 3 "" H 8400 5500 50  0001 C CNN
 	1    8400 5500
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	8700 5000 8450 5000
-Wire Wire Line
-	8400 5000 8400 5500
 Wire Wire Line
 	8300 5000 8300 5100
 Wire Wire Line
@@ -512,7 +508,7 @@ U 1 1 6045B872
 P 4450 6450
 F 0 "JP1" H 4450 6563 50  0000 C CNN
 F 1 "I2C" H 4450 6654 50  0000 C CNN
-F 2 "CoreElectronics_Components:SolderJumper-3_P1.3mm_Closed_RoundedPad1.0x1.5mm" H 4450 6450 50  0001 C CNN
+F 2 "CoreElectronics_Components:SolderJumper-3_P1.3mm_Closed_RoundedPad1.0x1.5mm_NumberLabels" H 4450 6450 50  0001 C CNN
 F 3 "~" H 4450 6450 50  0001 C CNN
 	1    4450 6450
 	-1   0    0    1   
@@ -610,4 +606,92 @@ Wire Wire Line
 	8400 2750 8700 2750
 Wire Wire Line
 	8400 3850 8700 3850
+$Comp
+L power:PWR_FLAG #FLG0101
+U 1 1 61E658F6
+P 5650 6900
+F 0 "#FLG0101" H 5650 6975 50  0001 C CNN
+F 1 "PWR_FLAG" H 5650 7073 50  0000 C CNN
+F 2 "" H 5650 6900 50  0001 C CNN
+F 3 "~" H 5650 6900 50  0001 C CNN
+	1    5650 6900
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0101
+U 1 1 61E65F24
+P 5650 7000
+F 0 "#PWR0101" H 5650 6750 50  0001 C CNN
+F 1 "GND" H 5655 6827 50  0000 C CNN
+F 2 "" H 5650 7000 50  0001 C CNN
+F 3 "" H 5650 7000 50  0001 C CNN
+	1    5650 7000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5650 6900 5650 7000
+$Comp
+L power:PWR_FLAG #FLG0102
+U 1 1 61E699BD
+P 6100 7000
+F 0 "#FLG0102" H 6100 7075 50  0001 C CNN
+F 1 "PWR_FLAG" H 6100 7173 50  0000 C CNN
+F 2 "" H 6100 7000 50  0001 C CNN
+F 3 "~" H 6100 7000 50  0001 C CNN
+	1    6100 7000
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:+3V3 #PWR0102
+U 1 1 61E6AB9F
+P 6100 6900
+F 0 "#PWR0102" H 6100 6750 50  0001 C CNN
+F 1 "+3V3" H 6115 7073 50  0000 C CNN
+F 2 "" H 6100 6900 50  0001 C CNN
+F 3 "" H 6100 6900 50  0001 C CNN
+	1    6100 6900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6100 6900 6100 7000
+Wire Notes Line
+	5450 7250 5450 6650
+Text Notes 5450 6650 0    50   ~ 0
+ERC Config
+$Comp
+L power:PWR_FLAG #FLG0103
+U 1 1 61E743DE
+P 6550 7000
+F 0 "#FLG0103" H 6550 7075 50  0001 C CNN
+F 1 "PWR_FLAG" H 6550 7173 50  0000 C CNN
+F 2 "" H 6550 7000 50  0001 C CNN
+F 3 "~" H 6550 7000 50  0001 C CNN
+	1    6550 7000
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:+5V #PWR0103
+U 1 1 61E74F8E
+P 6550 6900
+F 0 "#PWR0103" H 6550 6750 50  0001 C CNN
+F 1 "+5V" H 6565 7073 50  0000 C CNN
+F 2 "" H 6550 6900 50  0001 C CNN
+F 3 "" H 6550 6900 50  0001 C CNN
+	1    6550 6900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6550 6900 6550 7000
+Wire Notes Line
+	6750 6650 6750 7250
+Wire Notes Line
+	5450 6650 6750 6650
+Wire Notes Line
+	5450 7250 6750 7250
+NoConn ~ 2750 5200
+NoConn ~ 2850 5200
+Wire Wire Line
+	8700 5000 8400 5000
+Wire Wire Line
+	8400 5000 8400 5500
 $EndSCHEMATC
