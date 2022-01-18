@@ -5,7 +5,7 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
 Title "PiicoDev Adapter for Raspberry Pi"
-Date "2022-01-18"
+Date "2022-01-19"
 Rev "v13"
 Comp "Core Electronics"
 Comment1 "Based off the design by SparkFun: https://github.com/sparkfun/Qwiic_Hat_for_Raspberry_Pi"
