@@ -19,6 +19,7 @@ The PiicoDev® Adapter for Raspberry Pi is a great way to connect sensors to you
   -2 3.3V
   -3 SDA
   -4 SCL
+- The I2C Bus presented at the PiicoDev connector contains series 120Ohm resistances to prevent destructive signal undershoot. Refer to the schematic for more information. To operate without these series resistors, users may connect directly to the GPIO instead.
 
 
 # License
